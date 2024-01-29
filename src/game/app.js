@@ -8,4 +8,16 @@ function healthStatus(obj) {
   return 'critical';
 }
 
-export default healthStatus;	
+export function sorting(array) {
+  return array.sort((a, b) => {
+    if (a.health < b.health) {
+      return 1;
+    }
+    if (a.health > b.health) {
+      return -1;
+    }
+    return 0;
+  });
+}
+
+export default healthStatus;
