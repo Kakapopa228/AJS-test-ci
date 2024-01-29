@@ -1,4 +1,4 @@
-import healthStatus, { sorting }  from '../game/app';
+import healthStatus, { sorting } from '../game/app';
 
 test('healthStatus healthy', () => {
   const result = healthStatus({ name: 'маг', health: 90 });
